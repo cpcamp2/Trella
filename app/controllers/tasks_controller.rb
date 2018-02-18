@@ -19,7 +19,7 @@ class TasksController < ApplicationController
     @task = current_user.tasks.new(tasks_params)
     if @task.save
       flash[:notice] = "Successfully saved task!"
-      redirect_to task_path(@task)
+      redirect_to action: 'index'
     else
       render 'new'
     end
@@ -28,7 +28,7 @@ class TasksController < ApplicationController
   def update
     if @task.update(tasks_params)
       flash[:notice] = "Successfully updated task"
-      redirect_to task_path(@task)
+      redirect_to action: 'index'
     else
       render 'edit'
     end
