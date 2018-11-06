@@ -1,24 +1,15 @@
-# README
+# Trella
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A ruby on rails clone of trello
 
-Things you may want to cover:
+## How to Use
 
-* Ruby version
+Clone this repo
+run bundle install
+run rake db:create
+run rake db:migrate
+run rails s
 
-* System dependencies
+## Contribution
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Not currently accepting contributions
